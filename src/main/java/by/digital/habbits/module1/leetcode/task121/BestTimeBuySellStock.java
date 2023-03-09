@@ -15,7 +15,7 @@ public class BestTimeBuySellStock {
                     buy = prices[i];
                 }
             }
-            return Math.max(profit, 0);
+            return profit;
         }
     }
 }
