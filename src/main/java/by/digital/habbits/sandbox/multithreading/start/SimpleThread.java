@@ -1,0 +1,16 @@
+package by.digital.habbits.sandbox.multithreading.start;
+
+import java.util.concurrent.ThreadLocalRandom;
+
+public class SimpleThread extends Thread {
+
+    @Override
+    public void run() {
+        try {
+            Thread.sleep(ThreadLocalRandom.current().nextInt(0, 100));
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        System.out.println("Hello: " + Thread.currentThread().getName());
+    }
+}

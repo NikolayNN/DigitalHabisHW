@@ -11,12 +11,12 @@ import static org.junit.jupiter.params.provider.Arguments.arguments;
 
 class JUnit5DataProviderExample {
 
-    private final Sum myObject = new Sum();
+    private final Sum summator = new Sum();
 
     @ParameterizedTest
     @MethodSource("method1DataProvider")
     public void method1(int expected, int param1, int param2) {
-        assertEquals(expected, myObject.sum(param1, param2));
+        assertEquals(expected, summator.sum(param1, param2));
     }
 
     static Stream<Arguments> method1DataProvider() {
