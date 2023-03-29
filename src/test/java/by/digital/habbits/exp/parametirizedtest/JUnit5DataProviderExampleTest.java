@@ -9,7 +9,7 @@ import java.util.stream.Stream;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.params.provider.Arguments.arguments;
 
-class JUnit5DataProviderExample {
+class JUnit5DataProviderExampleTest {
 
     private final Sum summator = new Sum();
 
